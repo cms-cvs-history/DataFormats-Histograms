@@ -6,8 +6,8 @@
  *  DataFormat class to hold the information from a ME tranformed into
  *  ROOT objects as appropriate
  *
- *  $Date: 2009/10/07 16:33:39 $
- *  $Revision: 1.17.2.1 $
+ *  $Date: 2009/10/07 16:38:32 $
+ *  $Revision: 1.17.2.2 $
  *  \author M. Strang SUNY-Buffalo
  */
 
@@ -117,7 +117,7 @@ class MEtoEDM
           std::cout << MEtoEdmObject[j].name                         << " " << newMEtoEDMObject[i].name                         << std::endl;
           std::cout << MEtoEdmObject[j].object.GetNbinsX()           << " " << newMEtoEDMObject[i].object.GetNbinsX()           << std::endl;
           std::cout << MEtoEdmObject[j].object.GetXaxis()->GetXmin() << " " << newMEtoEDMObject[i].object.GetXaxis()->GetXmin() << std::endl;
-          std::cout << MEtoEdmObject[j].object.GetXaxis()->GetXmax() << " " << newMEtoEDMObject[j].object.GetXaxis()->GetXmax() << std::endl;
+          std::cout << MEtoEdmObject[j].object.GetXaxis()->GetXmax() << " " << newMEtoEDMObject[i].object.GetXaxis()->GetXmax() << std::endl;
           std::cout << MEtoEdmObject[j].object.GetNbinsY()           << " " << newMEtoEDMObject[i].object.GetNbinsY()           << std::endl;
           std::cout << MEtoEdmObject[j].object.GetYaxis()->GetXmin() << " " << newMEtoEDMObject[i].object.GetYaxis()->GetXmin() << std::endl;
           std::cout << MEtoEdmObject[j].object.GetYaxis()->GetXmax() << " " << newMEtoEDMObject[i].object.GetYaxis()->GetXmax() << std::endl;
