@@ -6,8 +6,8 @@
  *  DataFormat class to hold the information from a ME tranformed into
  *  ROOT objects as appropriate
  *
- *  $Date: 2009/09/28 18:28:07 $
- *  $Revision: 1.17 $
+ *  $Date: 2009/10/07 16:33:39 $
+ *  $Revision: 1.17.2.1 $
  *  \author M. Strang SUNY-Buffalo
  */
 
@@ -113,7 +113,7 @@ class MEtoEDM
          MEtoEdmObject[j].object.Add(&newMEtoEDMObject[i].object);
        } else {
           std::cout << "ERROR MEtoEDM::mergeProducts(): found histograms with different axis limits, '" << name << "' not merged" <<  std::endl;
-#if 1
+#if 0
           std::cout << MEtoEdmObject[j].name                         << " " << newMEtoEDMObject[i].name                         << std::endl;
           std::cout << MEtoEdmObject[j].object.GetNbinsX()           << " " << newMEtoEDMObject[i].object.GetNbinsX()           << std::endl;
           std::cout << MEtoEdmObject[j].object.GetXaxis()->GetXmin() << " " << newMEtoEDMObject[i].object.GetXaxis()->GetXmin() << std::endl;
